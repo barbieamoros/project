@@ -2,10 +2,7 @@
 <html>
 <style>
   body {
-  background-image: url('static/images/background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: cover;
+  background-color: #68043c;
 }
 
   nav {
@@ -17,6 +14,7 @@
     padding: 10px 100px;
     box-sizing: border-box;
     transition: .3s;
+    background-color: white;
   }
 
   section.sec1 {
@@ -90,6 +88,7 @@ nav ul li a.active{
   position: right;
   margin-top: 100px;
   width: 100%;
+
 }
 .about_me {
   font-weight: bold;
@@ -99,13 +98,24 @@ nav ul li a.active{
   margin: 0;
   margin-right: 100px;
   position: relative;
+  color: white;
  
 }
 .purpose {
+  margin: 0;
+  font-size: 20px;
   text-align: center;
-  margin: 100px;
-  font-size: 16px;
+  width: 90%;
+  border-radius: 10px;
+  margin-top: 120px;
+  padding: 10px;
+  margin-left:25px;
+  margin-right: 25px;
+
+  color: white;
+
 }
+
 
 </style>
 
@@ -132,21 +142,21 @@ nav ul li a.active{
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">CV</a></li>
+        <li> <a class="new_button" href="{{url_for('cv')}}">CV</a></li>
         <li><a href="#">Contact</a></li>
         <li><a class="active" href="#">Log In</a></li>
       </ul>
     </nav>
   </div>
 
-<div class = "parent">
-  <p class = "about_me">Hello!</p>
-  <p class = "about_me">I am</p>
-  <p class = "about_me">Barbara</p>
-</div>
-<div class = "purpose"> 
-<p>The purpose of this website is for me to practice new concepts of web development, security, managing databases, and also showcase my skills</p>
-</div>
+
+
+  <div class = "parent">
+    <p class = "about_me">Hello!</p>
+    <p class = "about_me">I am</p>
+    <p class = "about_me">Barbara</p>
+  </div>
+  <p class = "purpose">The purpose of this website is for me to practice new concepts of web development, security, managing databases, and also showcase my skills</p>
 </body>
 
 </html>

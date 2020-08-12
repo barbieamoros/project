@@ -7,3 +7,10 @@ def hello_world():
     doctsting
     '''
     return render_template('index.html')
+
+@app.route('/cv')
+def cv():
+    '''
+    doctsting
+    '''
+    return render_template('cv.html')
